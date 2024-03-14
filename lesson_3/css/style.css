@@ -1,0 +1,47 @@
+
+@import "reset.css";
+
+h1 {
+    color: black;
+}
+
+#house-for-writers,
+#doomed-to-die {
+    color: blue;
+}
+
+[class*="tional"] {
+    color: darkblue;
+}
+
+li.nav__item {
+    color: darkorange;
+}
+
+.arrest-and-suicide__title.title {
+    color: darkorange;
+}
+
+.doomed-to-die * {
+    color: darkkhaki;
+}
+
+.arrest-and-suicide p {
+    color: darkred;
+}
+
+.arrest-and-suicide__img > p {
+    color: darkslategray;
+}
+
+.house-for-writers .description {
+    color: darkred;
+}
+
+.house-for-writers__title ~ div {
+    color: darkgoldenrod;
+}
+
+.house-for-writers__img + div {
+    color: gray;
+}
