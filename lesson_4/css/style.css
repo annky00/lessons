@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import "fonts.css";
+
+@import "reset.css";
+
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.nav__list {
+    text-align: center;
+    font-size: 25px;
+    color: cornflowerblue;
+}
+
+.nav__item a {
+    text-decoration: underline;
+    text-decoration-color: rgba(7, 81, 151, 0.534);
+    text-decoration-style: dashed;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: 600;
+    color: black;
+}
+
+.psychoanalyze__title {
+    font-size: 25px;
+    color: brown;
+    text-shadow: -7px 5px 7px #b14646;
+    text-transform: uppercase;
+    white-space: nowrap;
+    letter-spacing: 8px;
+}
+
+.psychoanalyze__paragraphs-subtitle {
+    word-spacing: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.psychoanalyze__paragraphs p {
+    color: rgb(17, 17, 17);
+}
+
+.psychoanalyze__paragraphs-subtitle ~ p {
+    line-height: 1.575;
+}
+
+.homework {
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 16px;
+    color: #2b2929;
+    line-height: 1.875;
+}
+
+.homework .title {
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.living-room-des__img {
+    text-align: center;
+}
+
+
+.living-room-des__subtitle {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.additional-info__links {
+    text-align: center;
+    color: rgba(87, 82, 82, 0.342);
+}
+
