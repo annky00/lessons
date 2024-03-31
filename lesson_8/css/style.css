@@ -1,0 +1,75 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono&display=swap');
+
+@import "reset.css";
+
+
+body {
+    font-family: "Reddit Mono", sans-serif;
+    background: radial-gradient(circle, rgba(200,222,115,1) 0%, rgba(174,199,148,1) 49%, rgba(233,231,192,1) 100%);
+    color: #fff;
+    font-size: 20px;
+}
+
+.header {
+    text-align: center;
+}
+.header__title {
+    font-size: 45px;
+    padding: 50px 0;
+}
+
+.homework {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.image:not(:last-child) {
+    margin: 0 0 20px 0;
+}
+
+.image:not(:last-child) {
+    margin: 0 0 20px 0;
+}
+
+.image p {
+    display: inline-block;
+}
+
+
+.image img {
+    vertical-align: middle;
+}
+
+.content-img img {
+    height: 150px;
+    margin: 0 0 0 -200px;
+}
+
+.content-vec  img {
+    height: 80px;
+}
+
+.icon {
+    padding: 0 0 0 20px;
+} 
+
+.icon img {
+    height: 40px;
+}
+
+.image:hover {
+    padding: 0 0 0 20px;
+    color: #202020;
+}
+
+.icon:hover {
+    padding: 0 0 0 40px;
+}
+
+.footer {
+    text-align: center;
+    color: azure;
+    padding: 0 0 20px 0;
+}
+
