@@ -1,0 +1,38 @@
+
+
+@import "reset.css";
+
+.lang {
+    padding: 0 20px 0 0;
+    background: url("../img/icons/arrow_down.svg") center right no-repeat;
+}
+
+.discount {
+    padding: 5px 0 0 25px;
+    background: url("../img/icons/discount.svg") 0 50% no-repeat;
+    min-height: 24px;
+}
+
+.sale {
+    padding: 5px 0 0 25px;
+    background: url("../img/icons/sale.svg") 0 50% no-repeat;
+    min-height: 24px;
+}
+
+.credit {
+    padding: 5px 0 0 25px;
+    background: url("../img/icons/credit.svg") 0 50% no-repeat;
+    min-height: 24px;
+}
+
+.page-subtitle {
+    padding: 0 30px 0 0;
+    background: url("../img/icons/arrow.svg") center right no-repeat;
+    min-height: 24px;
+}
+
+.preview-card__availability {
+    padding: 5px 0 5px 25px;
+    background: url("../img/icons/check.svg") 0 50% no-repeat;
+    min-height: 24px; 
+}
