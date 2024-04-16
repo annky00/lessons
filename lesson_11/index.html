@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 11</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="header__title">Homework</h1>
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#2d" class="header__link">2d</a>
+                </li>
+                <li class="header__item">
+                    <a href="#3d" class="header__link">3d</a>
+                </li>
+                <li class="header__item">
+                    <a href="#coin" class="header__link">coin</a>
+                </li>
+                <li class="header__item">
+                    <a href="#not-car" class="header__link">my (not)car</a>
+                </li>
+            </ul>
+        </header>
+        <div class="page">
+            <div class="practice">
+                <div class="practice__2d twod-sect">
+                    <h2 class="twod-sect__title" id="2d">2D transform</h2>
+                    <div class="twod-sect__block twod-sect__block">
+                        <div class="twod-sect__item twod-sect__item--translate"><p>translate(-15%, 20%);</p></div>
+                    </div>
+                    <div class="twod-sect__block twod-sect__block">
+                        <div class="twod-sect__item twod-sect__item--scale"><p>scale(0.75);</p></div>
+                    </div>
+                    <div class="twod-sect__block twod-sect__block">
+                        <div class="twod-sect__item twod-sect__item--rotate"><p>rotate(74deg);</p></div>
+                    </div>
+                    <div class="twod-sect__block twod-sect__block">
+                        <div class="twod-sect__item twod-sect__item--skew"><p>skew(10deg, 25deg);</p></div>
+                    </div>
+                    <div class="twod-sect__block twod-sect__block">
+                        <div class="twod-sect__item twod-sect__item--transform-origin">
+                            <p>transform-origin: 20px 10px;</p>
+                            <p>transform: rotate(42deg);</p>
+                        </div>
+                    </div>
+                    <div class="twod-sect__block twod-sect__block">
+                        <div class="twod-sect__item twod-sect__item--matrix">
+                            <p>translate(100%, 50%)</p>
+                            <p>scale(0.8)</p> 
+                            <p>rotate(90deg) </p>
+                            <p>skew(-45deg, 16deg);</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="practice__3d threed-sect">
+                    <h2 class="threed-sect__title" id="3d">3D transform</h2>
+                    <div class="threed-sect__block threed-sect__block">
+                        <div class="threed-sect__item threed-sect__item--translate3d"><p>translate3d(-35px, -70px, 0px);</p></div>
+                    </div>
+                    <div class="threed-sect__block threed-sect__block">
+                        <div class="threed-sect__item threed-sect__item--scale3d"><p>scale3d(-1.5, -1.5, 1.5);</p></div>
+                    </div>
+                    <div class="threed-sect__block threed-sect__block">
+                        <div class="threed-sect__item threed-sect__item--rotate3d"><p>rotate3d(1.2, 3, 0.5, 45deg);</p></div>
+                    </div>
+                    <div class="threed-sect__block threed-sect__block">
+                        <div class="threed-sect__item threed-sect__item--matrix3d">
+                            <p>translate3d(48px, 15px, 50px)</p>
+                            <p>scale3d(1.1, 1.1, 1.1);</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="practice__coin coin">
+                    <div class="coin__body" id="coin">
+                        <div class="coin__back">
+                            <img src="/img/back.webp" alt="coin's back side">
+                        </div>
+                        <div class="coin__front">
+                            <img src="/img/front.webp" alt="coin's front side">
+                        </div>
+                    </div>
+                    <div class="coin__body" id="coin">
+                        <div class="coin__back">
+                            <img src="/img/back.webp" alt="coin's back side">
+                        </div>
+                        <div class="coin__front">
+                            <img src="/img/front.webp" alt="coin's front side">
+                        </div>
+                    </div>
+                    <div class="coin__body" id="coin">
+                        <div class="coin__back">
+                            <img src="/img/back.webp" alt="coin's back side">
+                        </div>
+                        <div class="coin__front">
+                            <img src="/img/front.webp" alt="coin's front side">
+                        </div>
+                    </div>
+                    <div class="coin__body" id="coin">
+                        <div class="coin__back">
+                            <img src="/img/back.webp" alt="coin's back side">
+                        </div>
+                        <div class="coin__front">
+                            <img src="/img/front.webp" alt="coin's front side">
+                        </div>
+                    </div>
+                    <div class="coin__body" id="coin">
+                        <div class="coin__back">
+                            <img src="/img/back.webp" alt="coin's back side">
+                        </div>
+                        <div class="coin__front">
+                            <img src="/img/front.webp" alt="coin's front side">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="metro" id="not-car">
+                <div class="metro__wrapper">
+                    <div class="metro__container">
+                        <div class="metro__body metro-part">
+                            <div class="metro-part__front"></div>
+                            <!-- <div class="metro-part__door-front"></div> -->
+                            <div class="metro-part__door metro-part__door--first-door">
+                                <div class="metro-part__first-door-part">
+                                    <div class="metro-part__window-door"></div>
+                                </div>
+                                <div class="metro-part__second-door-part">
+                                    <div class="metro-part__window-door"></div>
+                                </div>
+                            </div>
+                            <div class="metro-part__window">
+                                <div class="metro-part__top-window"></div>
+                                <div class="metro-part__bottom-window"></div>
+                            </div>
+                            <div class="metro-part__door metro-part__door--second-door">
+                                <div class="metro-part__first-door-part">
+                                    <div class="metro-part__window-door"></div>
+                                </div>
+                                <div class="metro-part__second-door-part">
+                                    <div class="metro-part__window-door"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <a href="#" class="footer__link">footer</a>
+        </footer>
+    </div>  
+</body>
+</html>
