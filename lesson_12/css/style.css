@@ -1,0 +1,337 @@
+
+
+@import "reset.css";
+
+@import "fonts.css";
+
+@import "animations.css";
+
+body {
+    font-family: "ProximaNova", sans-serif;
+    font-weight: 400;
+
+}
+
+.wrapper {
+    overflow: clip;
+	min-height: 100%;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    background-color: rgba(0,0,4,0.87);
+    color: #fff;
+    z-index: 50;
+    text-align: center;
+    text-transform: uppercase;
+}
+.header__title {
+    font-size: 40px;
+    display: inline-block;
+    padding: 0 50px; 
+    animation-name: logo-fall;
+    animation-delay: 1s;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+    transform-origin: 0 0;
+}
+.header__list {
+    display: inline-block;
+    font-size: 30px;
+}
+.header__item {
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.header__item:not(:last-child) {
+    margin: 0 20px 0 0;
+}
+
+.header__item:hover {
+    transform: scale(1.2);
+    color: #d38192;
+}
+
+.practice {
+    font-size: 0;
+}
+
+.coin {
+    width: 80%;
+    margin: 0 auto 200px auto;
+}
+.coin__body {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    
+}
+.coin__body img{
+    width: 100%;
+}
+.coin__back {
+    transform: rotateY(0deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.coin__front {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    will-change: transform;
+    transition: transform 0.8s;
+}
+
+.coin__back {
+    will-change: transform;
+    transition: transform 0.8s;
+}
+
+.coin__body:hover:not(:nth-child(3)) .coin__front {
+    transform: rotateY(0deg);
+}
+.coin__body:hover:not(:nth-child(3)) .coin__back {
+    transform: rotateY(-180deg);
+}
+
+.coin__body:nth-child(3) .coin__front {
+    animation-name: coin-front;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition-timing-function: cubic-bezier(0.600, 0.040, 0.980, 0.335);
+
+}
+
+.coin__body:nth-child(3) .coin__back {
+    animation-name: coin-back;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition-timing-function: cubic-bezier(0.600, 0.040, 0.980, 0.335);
+}
+
+
+
+.metro {
+    width: 1280px;
+    margin: 0 auto 100px auto;
+}
+.metro__wrapper {
+    background: url("../img/metro-background.webp") 0 0/100% no-repeat;
+    width: 100%;
+    height: 720px;
+    box-shadow: 15px 15px 100px #cdcad6;
+    overflow: hidden;
+}
+.metro__container {
+    position: relative;
+}
+.part-metro {
+    width: 1000px;
+    height: 350px;
+    background-color: #1d6bd8;
+    border-radius: 50px 50px 0 0;
+    position: absolute;
+    top: 213px;
+    left: 12%; 
+    transform: rotate(-0.8deg);
+    box-shadow: 10px 10px 30px #1560c7;
+    border-top: 54px dashed  #1560c7;
+    animation-name: metro-drive;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+
+.part-metro:hover {
+    animation-play-state: paused;
+}
+
+
+.part-metro::before {
+    content: "";
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    background-color: rgba(21, 96, 199, 0.8);
+}
+
+.part-metro::after {
+    content: "";
+    width: 917px;
+    height: 25px;
+    background-color: #d5cc45;
+    position: absolute;
+    z-index: 2;
+    bottom: 40%;
+    right: 0;
+}
+
+.part-metro__front {
+    width: 80px;
+    height: 200px;
+    margin: 25px 0 0 0;
+    background-color: #dedede;
+    outline: solid #332929;
+    border-radius: 0 70px 50px 0;
+    border-top: 30px solid #332929;
+    box-shadow: -10px 0px 30px #dedede;
+}
+
+.part-metro__front::after {
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: #332929;
+    position: absolute;
+    top: 177px;
+}
+
+
+.part-metro__door {
+    width: 200px;
+    font-size: 0;
+}
+
+.part-metro__door--first-door {
+    position: absolute;
+    top: 48px;
+    left: 130px;
+    z-index: 10;
+}
+
+.part-metro__door--second-door {
+    position: absolute;
+    top: 48px;
+    right: 130px;
+    z-index: 10;
+}
+
+
+.part-metro__first-door-part {
+    width: 100px;
+    height: 250px;
+    background-color: #1d6bd8;
+    border: 3px solid #1560c7;
+    border-radius: 40px 0 0 0;
+    display: inline-block; 
+}
+
+.part-metro__first-door-part::before {
+    content: "";
+    width: 120px;
+    height: 25px;
+    background-color: #d5cc45;
+    position: absolute;
+    z-index: 8;
+    top: 144px;
+    left: -26px;
+    transform: rotate(45deg);
+}
+
+.part-metro__first-door-part::after {
+    content: "";
+    width: 60px;
+    height: 25px;
+    background-color: #d5cc45;
+    position: absolute;
+    top: 198px;
+    left: 25px;
+    z-index: 8;
+    transform: rotate(-55deg)
+}
+
+.part-metro__second-door-part {
+    width: 100px;
+    height: 250px;
+    background-color: #1d6bd8;
+    border: 3px solid #1560c7;
+    border-radius: 0 40px 0 0; 
+    display: inline-block; 
+    margin: 0 0 0 -2px;
+}
+
+.part-metro__second-door-part::before {
+    content: "";
+    width: 120px;
+    height: 25px;
+    background-color: #d5cc45;
+    position: absolute;
+    z-index: 8;
+    top: 144px;
+    right: -25px;
+    transform: rotate(-45.8deg);
+}
+
+.part-metro__second-door-part::after {
+    content: "";
+    width: 65px;
+    height: 25px;
+    background-color: #d5cc45;
+    position: absolute;
+    top: 198px;
+    right: 25px;
+    z-index: 8;
+    transform: rotate(55deg)
+}
+
+.part-metro__window-door {
+    width: 70px;
+    height: 100px;
+    margin: 10px auto 0 auto;
+    /* margin: 10px; */
+    background-color: #dedede;
+    border-radius: 35px 35px 10px 10px;
+    border: 1px solid #332929;
+    box-shadow: 5px 5px 30px #dedede;
+    z-index: 10;
+}
+.part-metro__window {
+    width: 200px;
+    height: 110px;
+    position: absolute;
+    top: 40px;
+    left: 400px;
+    z-index: 10;
+    border: 1px solid #332929;
+    border-radius: 35px 35px 10px 10px;
+    background-color: #dedede;
+    box-shadow: 5px 5px 30px #dedede;
+}
+.part-metro__top-window::after {
+    content: "";
+    width: 199px;
+    height: 1px;
+    background-color: #332929;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: 15;
+}
+
+.part-metro__top-window::before {
+    content: "";
+    width: 2px;
+    height: 60%;
+    background-color: #3329299f;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+
+
+
+.footer {
+    text-align: center;
+    padding: 0 0 50px 0;
+}
