@@ -4,8 +4,6 @@
 
 @import "fonts.css";
 
-@import "animations.css";
-
 body {
     font-family: "ProximaNova", sans-serif;
     font-weight: 400;
@@ -28,10 +26,15 @@ body {
 	margin: 0 auto;
 	padding: 0px 15px;
 }
-[class*=--margin] {
+.popular--margin {
 	margin: 0 0 70px 0;
 }
-
+.most-popular--margin{
+	margin: 0 0 70px 0;
+}
+.discount--margin {
+	margin: 0 0 70px 0;
+}
 .header {
 	display: flex;
 	flex-direction: column;
