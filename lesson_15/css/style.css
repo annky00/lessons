@@ -157,7 +157,7 @@ body {
 	height: 50px;
 }
 .header__number {
-	padding: 0px 34px 0px 0px;
+	padding: 0px 24px 0px 0px;
 	position: relative;
 }
 .header__number::after {
@@ -180,6 +180,7 @@ body {
 	font-size: 20px;
 	line-height: 1.4;
 	font-family: 'ProximaNova-Semibold', sans-serif;
+	position: relative;
 }
 
 .header__mobile-search {
