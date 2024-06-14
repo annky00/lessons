@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,600,italic);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:regular);
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+body {
+  background-color: #1b1b1b;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper > main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+[class*=__container] {
+  max-width: 1303px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.header__container {
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+.header__title {
+  font-size: 45px;
+  text-align: center;
+  text-shadow: -14px 0px 21px rgb(245, 44, 209);
+}
+
+.homework {
+  margin-bottom: 70px;
+}
+
+.task:not(:last-child) {
+  margin-bottom: 50px;
+}
+.task::after {
+  content: "";
+  height: 2px;
+  width: 70%;
+  background-color: rgba(245, 44, 208, 0.37);
+}
+.task__title {
+  font-size: 35px;
+  text-shadow: -10px 0px 15px rgb(245, 44, 111);
+  margin-bottom: 15px;
+}
+.task__subtitle {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.task__answ {
+  font-size: 20px;
+  color: rgba(106, 255, 47, 0.712);
+}
+.task__quest {
+  font-size: 20px;
+  font-family: "Inconsolata", sans-serif;
+  margin-bottom: 10px;
+  background-color: #252230;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 8px;
+}
+.task__quest p {
+  margin-bottom: 5px;
+}
+
+.footer__container {
+  padding-bottom: 20px;
+}
+.footer__text {
+  text-align: right;
+  font-size: 20px;
+}

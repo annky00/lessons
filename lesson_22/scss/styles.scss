@@ -1,0 +1,116 @@
+
+@import "_reset.scss";
+
+@import "_fonts.scss";
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,600,italic);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:regular);
+
+body {
+	background-color: #1b1b1b;
+	color: #fff;
+	font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+[class*=__container] {
+	max-width: 1303px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+.header {
+
+		// .header__container
+
+		&__container {
+			padding-top: 50px;
+			margin-bottom: 50px;
+		}
+
+		// .header__title
+
+		&__title {
+			font-size: 45px;
+			text-align: center;
+			text-shadow: -14px 0px 21px rgb(245, 44, 209);
+		}
+}
+.homework {
+
+	margin-bottom: 70px;
+		
+}
+.task {
+		&:not(:last-child) {
+			margin-bottom: 50px;
+		}
+		// .task__title
+		&::after {
+			content: "";
+			height: 2px;
+			width: 70%;
+			background-color: rgba(245, 44, 208, 0.37);
+		}
+		&__title {
+			font-size: 35px;
+			text-shadow: -10px 0px 15px rgb(245, 44, 111);
+			margin-bottom: 15px;
+		}
+		// .task__wrap
+
+		// .task__subtitle
+
+		&__subtitle {
+			font-size: 25px;
+			margin-bottom: 20px;
+		}
+
+		// .task__answ
+
+		&__answ {
+			font-size: 20px;
+			color: rgba(106, 255, 47, 0.712);
+		}
+
+		// .task__quest
+
+		&__quest {
+			font-size: 20px;
+			font-family: "Inconsolata", sans-serif;
+			margin-bottom: 10px;
+			background-color: #252230;
+			display: inline-block;
+			padding: 20px;
+			border-radius: 8px;
+			p {
+				margin-bottom: 5px;
+			}
+		}
+}
+.footer {
+
+		// .footer__container
+
+		&__container {
+			padding-bottom: 20px;
+		}
+
+		// .footer__text
+
+		&__text {
+			text-align: right;
+			font-size: 20px;
+		}
+}
