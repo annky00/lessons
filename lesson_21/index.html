@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 21</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+            <h1 class="header__title">Homework 21</h1>
+        </div>
+      </header>
+      <main class="homework">
+        <div class="homework__container">
+            <article class="task">
+                <h2 class="task__title">Задача №1</h2>
+                <div class="task__wrap">
+                    <h3 class="task__subtitle">Яка назва змінної вірна?</h3>
+                    <ul class="task__answ-list">
+                        <li class="task__answ-item">1. let user-name</li>
+                        <li class="task__answ-item">2. let UserName</li>
+                        <li class="task__answ-item task__answ-item--right">3. let userName</li>
+                    </ul>
+                    <div class="task__answ">При наданні назви змінній використовується стиль lowerCamelCase.</div>
+                </div>
+            </article>
+            <article class="task">
+                <h2 class="task__title">Задача №2</h2>
+                <div class="task__wrap">
+                    <h3 class="task__subtitle">Чи буде помилка при виконанні наступної програми?</h3>
+                    <div class="task__quest">
+                        <p>const userName = 20</p>
+                        <p>userName = "Іштван"</p>
+                    </div>
+                    <div class="task__answ">Так, буде помилка. Значення константи не можна змінювати, воно задається лише один раз.</div>
+                </div>
+            </article>
+            <article class="task">
+                <h2 class="task__title">Задача №3</h2>
+                <div class="task__wrap">
+                    <h3 class="task__subtitle">Що потрапить в консоль?</h3>
+                    <div class="task__quest">
+                        <p>let numOne = 20</p>
+                        <p>let numTwo = "20"</p>
+                        <p>let numSumm = numOne + numTwo</p>
+                        <p>console.log(numSumm)</p>
+                    </div>
+                    <div class="task__answ">В консоль потрапить 2020, так як бінарний оператор додавання не змінює тип даних.</div>
+                </div>
+            </article>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text">Дякую за перевірку!</p>
+        </div>
+      </footer>
+    </div> 
+    <!-- <script src="js/script.js"></script>  -->
+</body>
+</html>
