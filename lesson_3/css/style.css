@@ -1,0 +1,55 @@
+@import "reset.css";
+
+* {
+    color: gray;
+}
+
+h2 {
+    color: blue;
+}
+
+#start {
+    color: rgb(0, 0, 0);
+}
+
+[class*="ader"] {
+    color: rgb(255, 51, 0);
+}
+
+p.text {
+    color: rgb(5, 153, 104);
+}
+
+.main__title.our-future {
+    color: blueviolet;
+}
+
+.red,
+.footer__but {
+    color: red;
+}
+
+.main__first p {
+    color: rgb(173, 77, 173);
+}
+
+.main__image+p {
+    color: rgb(0, 79, 248);
+}
+
+.red~p {
+    color: rgb(0, 0, 0);
+}
+
+.footer>p {
+    color: rgba(167, 142, 0, 0.699);
+}
+
+.main .second {
+    color: green;
+}
+
+
+.main__about * {
+    color: rgb(255, 0, 255);
+}
