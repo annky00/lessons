@@ -1,0 +1,203 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+
+body {
+    background-color: #231F8B;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+.header {
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+.header__title {
+    margin-bottom: 25px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.header__list {
+    color: #040331;
+}
+
+.header__item {
+    margin-bottom: 5px;
+}
+
+.main {
+    margin-bottom: 50px;
+}
+
+.main__first-block {
+    margin-bottom: 50px;
+}
+
+.draft {
+    font-size: 14px;
+    max-width: 1050px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.draft__text {
+    margin-bottom: 70px;
+    max-width: 765px;
+}
+
+.draft__subtitle {
+    color: #5A54F2;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.draft__title {
+    font-family: "Circular Std", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.draft__par {
+    font-family: "Circular Std", sans-serif;
+    font-weight: 450;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+
+.cards {
+    font-size: 0;
+}
+
+.card {
+    background-color: #FFFFFF;
+    padding: 35px 40px;
+    display: inline-block;
+    max-width: 230px;
+    margin-right: 40px;
+    vertical-align: top;
+}
+
+.card__icon {
+    margin-bottom: 20px;
+}
+
+.card__title {
+    color: #252B42;
+    font-family: "Circular Std", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.card__line {
+    height: 2px;
+    width: 50px;
+    margin-bottom: 20px;
+    background-color: #E74040;
+}
+
+.card__par {
+    color: #737373;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.blue-card.card {
+    background-color: #5A54F2;
+}
+
+.blue-card .card__title {
+    color: #FFFFFF;
+}
+
+.blue-card .card__line {
+    background-color: #FFFFFF;
+}
+
+.blue-card .card__par {
+    color: #FFFFFF;
+}
+
+.lower {
+    margin-top: 48px;
+}
+
+.zero-margin {
+    margin-right: 0;
+}
+
+.add {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.add__title {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.add__subtitle {
+    margin-bottom: 10px;
+    color: #5a56b8;
+}
+
+.add__subtitle span {
+    color: #ffffff;
+}
+
+.add__par {
+    font-size: 50px;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.add__par h2 {
+    font-size: 25px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.add__img {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.add__img img {
+    width: 300px;
+    height: 300px;
+}
+
+.add__img p {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.footer {
+    padding-bottom: 25px;
+}
+
+.footer__text {
+    margin-bottom: 20px;
+}
+
+.footer__link {
+    color: black;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 10px 50px;
+    box-sizing: content-box;
+}
