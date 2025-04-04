@@ -1,0 +1,320 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,600,700&display=swap");
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    max-width: 1231px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {
+    background-color: #926cd8b0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #412672;
+    margin-bottom: 10px;
+}
+
+.header ul li:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+.header ul li a {
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #412672;
+    text-transform: uppercase;
+}
+
+.header ul li a:hover {
+    background-color: #FE3F3F;
+}
+
+.first {
+    background: #412672;
+    padding-top: 61px;
+    padding-bottom: 102px;
+}
+
+.first__title {
+    color: #FFF;
+    font-size: 38px;
+    line-height: 46px;
+    margin-bottom: 31px;
+}
+
+.bold {
+    font-weight: 700;
+    display: block;
+}
+
+.cards {
+    font-size: 0;
+}
+
+.card {
+    padding: 20px;
+    background: #FFF;
+    box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0.00), 0px 246px 98px 0px rgba(0, 0, 0, 0.01), 0px 138px 83px 0px rgba(0, 0, 0, 0.05), 0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.10);
+    font-size: 15px;
+    display: inline-block;
+    max-width: 387px;
+    height: 467px;
+    vertical-align: top;
+}
+
+.card:not(:last-child) {
+    margin-right: 20px;
+}
+
+.card:hover {
+    background: #FFBE48;
+    box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0.00), 0px 246px 98px 0px rgba(0, 0, 0, 0.01), 0px 138px 83px 0px rgba(0, 0, 0, 0.05), 0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.10);
+}
+
+.card__image {
+    max-width: 347px;
+    max-height: 266px;
+}
+
+.card__title {
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.card__text p {
+    color: #4F4F4F;
+    line-height: 19px;
+}
+
+.card__link {
+    color: #FE3F3F;
+    line-height: 19px;
+}
+
+.card__link:hover {
+    text-decoration: underline;
+}
+
+.card>*:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.second {
+    background: #FFF;
+    color: #412672;
+    padding-top: 55px;
+    padding-bottom: 42px;
+    font-size: 0;
+}
+
+.second__left-side {
+    max-width: 518px;
+}
+
+.second__title {
+    font-size: 34px;
+    line-height: 41px;
+}
+
+.second__text p {
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.second__left-side ul {
+    color: #4F4F4F;
+    font-size: 20px;
+}
+
+.second__left-side>*:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.second__left-side ul li::before {
+    content: "";
+    background: url("../img/check.svg") 0 0 / 100% no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.second__left-side ul li:not(:last-of-type) {
+    margin-bottom: 35px;
+}
+
+.game {
+    background-color: #94140ba1;
+    padding: 20px 0px 20px 0px;
+}
+
+.game__title {
+    color: #3f0202;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.field div {
+    background-color: #3a1210a1;
+}
+
+.field div:not(:first-child) {
+    visibility: hidden;
+}
+
+.field>div:hover+div,
+.field>div:hover {
+    visibility: visible;
+}
+
+.part-1 {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.part-2 {
+    width: 500px;
+    height: 30px;
+}
+
+.part-3 {
+    width: 30px;
+    height: 100px;
+    margin-left: 470px;
+}
+
+.part-4 {
+    margin-left: 470px;
+    width: 100px;
+    height: 20px;
+}
+
+.part-5 {
+    width: 20px;
+    height: 80px;
+    margin-left: 550px;
+}
+
+.part-6 {
+    width: 250px;
+    height: 20px;
+    margin-left: 320px;
+}
+
+.part-7 {
+    width: 15px;
+    height: 80px;
+    margin-left: 320px;
+}
+
+.part-8 {
+    width: 550px;
+    height: 15px;
+    margin-left: 320px;
+}
+
+.part-9 {
+    height: 120px;
+    width: 10px;
+    margin-left: 860px;
+}
+
+.part-10 {
+    background: url("../img/game.jpg") center / 900px 560px no-repeat fixed;
+    width: 900px;
+    height: 400px;
+    margin-left: 151px;
+}
+
+.practice {
+    background-color: #574774;
+    padding-top: 50px;
+}
+
+.practice__field a {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.practice__field a:nth-child(even) {
+    background-color: #FFBE48;
+}
+
+.practice__field a:nth-child(4n+1) {
+    background-color: #5448ff;
+}
+
+.practice__field a:has(span) {
+    background-color: rgb(158, 33, 33);
+}
+
+.practice__field a:not(:last-child) {
+    margin-right: 20px;
+}
+
+.practice__field a:hover {
+    background-color: #000000;
+    color: rgb(158, 33, 33);
+}
+
+.practice__field a:active {
+    background-color: rgb(33, 158, 127);
+}
+
+
+.practice__field a:focus-visible {
+    outline: 2px solid rgb(180, 192, 74);
+}
+
+.practice__field:last-child::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background: url("../img/heart.png") 0 0 / 100% no-repeat;
+    margin-left: 50px;
+    vertical-align: middle;
+
+}
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #574774;
+    font-size: 50px;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 20px;
+}
+
+.footer a {
+    background-color: #FE3F3F;
+    padding: 8px 50px;
+    border-radius: 10px;
+}
+
+.footer a:hover {
+    background-color: #412672;
+}
