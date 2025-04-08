@@ -1,0 +1,91 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:regular,700&display=swap");
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    font-family: "Nunito Sans", sans-serif;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 0.6) 0%, rgba(253, 29, 29, 0.6) 50%, rgba(69, 217, 252, 0.6) 100%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+.header,
+.footer {
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgba(78, 34, 107, 0.6) 0%, rgba(184, 21, 21, 0.6) 50%, rgba(43, 133, 154, 0.6) 100%);
+    font-size: 30px;
+    padding: 20px 0px;
+    font-weight: 700;
+}
+
+.images {
+    padding: 50px 0px;
+}
+
+.images__svg {
+    margin-bottom: 20px;
+}
+
+.svg:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.svg p,
+.avif p {
+    display: inline-block;
+}
+
+.arrow::before {
+    content: "";
+    background: url("../img/icons/arrow.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.search::before {
+    content: "";
+    background: url("../img/icons/search.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.plus::before {
+    content: "";
+    background: url("../img/icons/plus.svg") no-repeat;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.avif:nth-child(even) img {
+    margin-bottom: 10px;
+}
+
+.avif:nth-child(even) {
+    text-align: center;
+}
+
+.white-back {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.border-radius {
+    border-radius: 150px 0px;
+}
+
+.avif:not(:last-child) {
+    margin-bottom: 10px;
+}
