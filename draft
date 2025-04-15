@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>TimelineVerse</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f4f8;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: #1e293b;
+      color: white;
+    }
+
+    .timeline {
+      position: relative;
+      margin: 3rem auto;
+      width: 90%;
+      max-width: 800px;
+      padding-left: 20px;
+      border-left: 4px solid #94a3b8;
+    }
+
+    .event {
+      position: relative;
+      margin-bottom: 2rem;
+      padding-left: 1rem;
+    }
+
+    .event::before {
+      content: '●';
+      position: absolute;
+      left: -1.1rem;
+      top: 0;
+      font-size: 1.5rem;
+      color: #3b82f6;
+    }
+
+    .event h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #1e293b;
+    }
+
+    .event .date {
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+
+    .event .details {
+      display: none;
+      margin-top: 0.5rem;
+      padding: 0.7rem;
+      background: #e2e8f0;
+      border-radius: 10px;
+      font-size: 0.95rem;
+    }
+
+    .event.active .details {
+      display: block;
+    }
+
+    .add-btn {
+      display: block;
+      margin: 2rem auto;
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .add-btn:hover {
+      background-color: #2563eb;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🪐 TimelineVerse</h1>
+    <p>Керуй своїми подіями у вигляді стрічки часу</p>
+  </header>
+
+  <main>
+    <div class="timeline" id="timeline">
+      <!-- Події додаються тут -->
+      <div class="event" onclick="toggleDetails(this)">
+        <h3>Захист диплома</h3>
+        <p class="date">15 червня 2025</p>
+        <div class="details">
+          Місце: Актова зала<br>
+          Учасники: Я, керівник, комісія<br>
+          Коментар: Підготувати презентацію та відповіді на питання.
+        </div>
+      </div>
+
+      <div class="event" onclick="toggleDetails(this)">
+        <h3>Мітинг з командою</h3>
+        <p class="date">2 липня 2025</p>
+        <div class="details">
+          Місце: Google Meet<br>
+          Завдання: Підвести підсумки проєкту, зробити ретроспективу.
+        </div>
+      </div>
+    </div>
+
+    <button class="add-btn" onclick="addEvent()">+ Додати подію</button>
+  </main>
+
+  <script>
+    function toggleDetails(eventEl) {
+      eventEl.classList.toggle('active');
+    }
+
+    function addEvent() {
+      const title = prompt("Назва події:");
+      const date = prompt("Дата події:");
+      const details = prompt("Деталі події:");
+
+      if (!title || !date) return;
+
+      const timeline = document.getElementById('timeline');
+      const eventDiv = document.createElement('div');
+      eventDiv.className = 'event';
+      eventDiv.onclick = () => toggleDetails(eventDiv);
+
+      eventDiv.innerHTML = `
+        <h3>${title}</h3>
+        <p class="date">${date}</p>
+        <div class="details">${details || "Без деталей"}</div>
+      `;
+
+      timeline.appendChild(eventDiv);
+    }
+  </script>
+
+</body>
+</html>
