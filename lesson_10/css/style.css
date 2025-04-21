@@ -1,0 +1,301 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+}
+
+[class*="__container"] {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+.header__container,
+.footer__container {
+    padding: 20px 15px
+}
+
+.header__title,
+.footer__text {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.footer__text {
+    font-size: 15px;
+}
+
+.first--margin {
+    margin-bottom: 20px;
+}
+
+.card {
+    max-width: 265px;
+    border: 1px solid #E6E6E6;
+    background-color: #FFF;
+    position: relative;
+}
+
+.card>*:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.card__links {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.card__link:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+.card__link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #F2F2F2;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card__link--favourite {
+    background: #FFF url("../img/heart.svg")center no-repeat;
+}
+
+.card__link--more {
+    background: #FFF url("../img/eye.svg")center no-repeat;
+}
+
+.card__image img {
+    width: 100%;
+}
+
+.card__bottom {
+    margin-left: 12px;
+    margin-bottom: 30px;
+    /* цього краще не робити, попередній марджин має зробити гарні відступи за умови НАЯВНОСТІ рейтингу. перезаписую властивість для того аби зберегти приємний візуал */
+}
+
+.card__title {
+    color: #4D4D4D;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.card__price {
+    color: #1A1A1A;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.card__cart {
+    position: absolute;
+    right: 16px;
+    bottom: 24px;
+    width: 40px;
+    height: 40px;
+    background: #F2F2F2 url("../img/cart_black.svg")center no-repeat;
+    border-radius: 50%;
+}
+
+.card:hover .card__title {
+    color: #2C742F;
+}
+
+.card:hover {
+    border: 1px solid #2C742F;
+    box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+}
+
+.card:hover .card__cart {
+    background: #00B207 url("../img/cart.svg")center no-repeat;
+}
+
+.card:hover .card__link {
+    visibility: visible;
+    opacity: 1;
+}
+
+.second {
+    background-color: #5A54F2;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: #FFF;
+    position: relative;
+}
+
+.second::after {
+    content: "";
+    width: 100%;
+    height: 35px;
+    background-color: #231F8B;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 100% 100% 0% 0% / 100% 100% 100% 100%
+}
+
+.second::before {
+    content: "";
+    width: 100%;
+    height: 65px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0% 0% 100% 100% / 100% 100% 100% 100%
+}
+
+.second__container::before {
+    content: "";
+    background: url("../img/background.svg");
+    width: 214px;
+    height: 473px;
+    position: absolute;
+    top: 381px;
+    left: 245px;
+}
+
+.second__container::after {
+    content: "";
+    background: url("../img/background_rotate.svg");
+    width: 473px;
+    height: 214px;
+    position: absolute;
+    bottom: 144px;
+    right: 167px;
+}
+
+.section:not(:last-child) {
+    margin-bottom: 55px;
+}
+
+.section--right {
+    text-align: right;
+}
+
+.section>*:first-child {
+    margin-right: 70px;
+}
+
+.section__image {
+    display: inline-block;
+    max-width: 430px;
+    position: relative;
+    z-index: 3;
+}
+
+.section__image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.section__image--gray-shadow img {
+    box-shadow: 22px 42px 44px 0px rgba(0, 0, 0, 0.30);
+    position: relative;
+    z-index: 3;
+}
+
+.section__image--purple-shadow img {
+    box-shadow: -25px 20px 44px 0px rgba(84, 48, 209, 0.40);
+    position: relative;
+    z-index: 3;
+}
+
+.section__image--purple-shadow::before {
+    content: "";
+    background: url("../img/circle.svg") 0 0 / cover no-repeat;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 168px;
+    left: -123px;
+}
+
+.section__image--purple-shadow::after {
+    content: "";
+    background: url("../img/circle_401.svg") 0 0 / cover no-repeat;
+    width: 401px;
+    height: 401px;
+    position: absolute;
+    top: 213px;
+    left: -108px;
+}
+
+.section__image--gray-shadow::before {
+    content: "";
+    background: url("../img/circle.svg") 0 0 / cover no-repeat;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: -48px;
+    left: 92px;
+    z-index: 5;
+}
+
+.section__image--gray-shadow::after {
+    content: "";
+    background: url("../img/circle_262.svg") 0 0 / cover no-repeat;
+    width: 262px;
+    height: 262px;
+    position: absolute;
+    top: -26px;
+    right: -129px;
+}
+
+
+
+.section__text {
+    display: inline-block;
+    max-width: 602px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.section__text--smaller {
+    max-width: 506px;
+}
+
+.section__title {
+    font-family: "Circular Std", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 13px;
+    line-height: 45px;
+}
+
+.section__par {
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 39px;
+}
+
+.section__but {
+    font-weight: 500;
+    border-radius: 60px;
+    background: #F35B09;
+    padding: 22px 26px 21px 26px;
+}
+
+.section__but:hover {
+    background: #e05408;
+}
+
+
+.footer {
+    background-color: #231F8B;
+}
