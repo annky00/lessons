@@ -1,0 +1,254 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper>main {
+    flex-grow: 1;
+}
+
+[class*="__container"] {
+    max-width: 1232px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header,
+.footer {
+    text-align: center;
+    font-size: 38px;
+    padding: 15px 15px;
+    background: #412672;
+    color: #FFF;
+}
+
+.specialists {
+    background-color: #412672;
+    padding: 60px 0px 100px 0px;
+}
+
+.specialists__title {
+    display: flex;
+    color: #FFF;
+    font-size: 38px;
+    line-height: 46px;
+    flex-direction: column;
+    margin-bottom: 31px;
+}
+
+.specialists__title>strong {
+    font-weight: 700;
+}
+
+.specialists__cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #FFF;
+    box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0.00), 0px 246px 98px 0px rgba(0, 0, 0, 0.01), 0px 138px 83px 0px rgba(0, 0, 0, 0.05), 0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.10);
+    transition: background 0.3s;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 387px;
+}
+
+.card:hover {
+    background: #FFBE48;
+    transition: background 0.3s;
+}
+
+.card>*:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.card__image>img {
+    width: 100%;
+}
+
+.card__title {
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+.card__text,
+.card__link {
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.card__text {
+    color: #4F4F4F;
+    flex-grow: 1;
+}
+
+.card__link>a {
+    color: #FE3F3F;
+    transition: scale 0.3s;
+    scale: 1;
+    display: inline-flex;
+}
+
+.card__link>a:hover {
+    scale: 1.1;
+    transition: scale 0.3s;
+}
+
+.about {
+    background: #FFF;
+    padding: 55px 0px 72px 0px;
+}
+
+.about__container {
+    display: flex;
+    gap: 20px 90px;
+    /* flex-wrap: wrap; */
+}
+
+.about__text {
+    max-width: 518px;
+    align-self: center;
+}
+
+.about__text>*:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.about__title {
+    color: #412672;
+    font-size: 34px;
+    line-height: 41px;
+}
+
+.about__title>strong {
+    font-weight: 700;
+}
+
+.about__par {
+    color: #412672;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.about__list>*:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.about__list {
+    padding: 10px 0px;
+}
+
+.about__item {
+    color: #4F4F4F;
+    font-size: 20px;
+    display: inline-flex;
+    gap: 19px;
+    align-items: center;
+}
+
+.about__item::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url("../img/check.svg")0 0 / 100% no-repeat;
+    align-self: flex-start;
+    flex-shrink: 0;
+}
+
+.about__photo {
+    margin-right: -170px;
+    flex-basis: 765px;
+}
+
+.about__photo>img {
+    width: 100%;
+}
+
+.features {
+    color: #fff;
+    background-color: #412672;
+    padding: 70px 0px;
+}
+
+.features__title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    line-height: 29px;
+}
+
+.features__title>strong {
+    font-weight: 700;
+}
+
+.features__items {
+    display: flex;
+    gap: 10px 140px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.features__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 215px;
+}
+
+.features__text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.features__text>p {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.features__item::before {
+    content: "";
+    width: 70px;
+    height: 70px;
+    align-self: flex-start;
+    flex-shrink: 0;
+}
+
+.features__item--icon-1::before {
+    background: url("../img/icon_1.avif")0 0 / 100% no-repeat;
+}
+
+.features__item--icon-2::before {
+    background: url("../img/icon_2.avif")0 0 / 100% no-repeat;
+}
+
+.features__item--icon-3::before {
+    background: url("../img/icon_3.avif")0 0 / 100% no-repeat;
+}
+
+.features__item--icon-4::before {
+    background: url("../img/icon_4.avif")0 0 / 100% no-repeat;
+}
