@@ -134,6 +134,12 @@ body {
     padding: 18px 12px;
     height: 181px;
     overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+
+.card__description::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 .card__bottom {
