@@ -28,7 +28,7 @@ body {
 .header {
     padding-top: 30px;
     padding-bottom: 30px;
-    background: radial-gradient(50% 50% at 50% 50%, #E83156 0%, rgba(238, 87, 85, 0.55) 100%), url("../img/back.svg") right no-repeat;
+    background: radial-gradient(circle,rgba(114, 0, 148, 1) 0%, rgba(187, 91, 217, 1) 50%, rgba(177, 134, 189, 1) 100%), url("../img/back.svg") right no-repeat;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: #232D42;
     font-size: 25px;
@@ -284,7 +284,7 @@ body {
 }
 
 .footer {
-    background: radial-gradient(50% 50% at 50% 50%, #E83156 0%, rgba(238, 87, 85, 0.55) 100%);
+    background: radial-gradient(circle,rgba(114, 0, 148, 1) 0%, rgba(187, 91, 217, 1) 50%, rgba(177, 134, 189, 1) 100%);
 }
 
 .footer__text {
